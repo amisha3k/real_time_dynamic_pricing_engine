@@ -1,0 +1,10 @@
+artifact_location: file:///c:/Users/KIIT/Desktop/dynamic_pricing_/notebook/mlruns/797354135439494466/models/m-46471ec1a29e4a75bb05f6546c719b85/artifacts
+creation_timestamp: 1757591226076
+experiment_id: '797354135439494466'
+last_updated_timestamp: 1757591247138
+model_id: m-46471ec1a29e4a75bb05f6546c719b85
+model_type: null
+name: lgb_model
+source_run_id: 7bd5078107fc409889fafbf7e1b6b7cb
+status: 2
+status_message: null

@@ -1,10 +1,5 @@
 # 🛒 Dynamic Pricing Engine with Business Insights
 
-Dynamic Pricing Engine is a Machine Learning-powered project designed to predict optimal product prices based on demand, seasonality, and product features.
-It integrates a Streamlit frontend with a FastAPI backend and leverages ML models for real-time price recommendations.
----
-
-## 📌 Project Overview
 This project implements a **machine learning-based dynamic pricing engine** that predicts the optimal product price using **LightGBM** and **XGBoost** models.  
 It not only focuses on model accuracy but also evaluates **business-centric metrics** such as **Revenue** and **Profit**, helping businesses maximize profitability while maintaining competitive pricing.
 
@@ -52,16 +47,6 @@ It not only focuses on model accuracy but also evaluates **business-centric metr
   "estimated_profit": 4607.50
 }
 ```
-
-
-## Features
-
-- ML-Based Price Prediction: Predicts optimal product prices using trained machine learning models.
-- Streamlit Frontend: Interactive dashboard for visualizing and experimenting with pricing strategies.
-- FastAPI Backend: Serves API endpoints for real-time predictions.
-- Data Handling: Supports product input via API or UI.
-- Visualization: Compare actual vs. predicted prices through charts and tables.
-- Modular Design: Easy to extend with new models or features.
 
 ---
 

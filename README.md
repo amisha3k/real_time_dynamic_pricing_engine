@@ -1,8 +1,58 @@
-# 🛒 Dynamic Pricing Engine (ML-Based)
+# 🛒 Dynamic Pricing Engine with Business Insights
 
 Dynamic Pricing Engine is a Machine Learning-powered project designed to predict optimal product prices based on demand, seasonality, and product features.
 It integrates a Streamlit frontend with a FastAPI backend and leverages ML models for real-time price recommendations.
 ---
+
+## 📌 Project Overview
+This project implements a **machine learning-based dynamic pricing engine** that predicts the optimal product price using **LightGBM** and **XGBoost** models.  
+It not only focuses on model accuracy but also evaluates **business-centric metrics** such as **Revenue** and **Profit**, helping businesses maximize profitability while maintaining competitive pricing.
+
+## 🚀 Key Features
+- **Price Prediction** using LightGBM and XGBoost
+- **Business Insights Dashboard** (Streamlit):
+  - Predicted Price per model
+  - Estimated Revenue and Profit
+  - Model performance comparison (MAE, R²)
+  - Visual Profit Analysis
+- **Feature Engineering**: moving averages, elasticity, demand trend factors
+- **REST API** powered by FastAPI for real-time predictions
+- **Streamlit UI** for business users and non-technical stakeholders
+
+## 📊 Model Performance
+- **LightGBM**
+  - Validation L2 Loss: ~97
+  - MAE: ~12.5  
+  - R² Score: ~0.87
+
+- **XGBoost**
+  - Validation MAE: ~8.1  
+  - MAE: ~13.2  
+  - R² Score: ~0.85  
+
+## 💹 Business Value
+- Provides **optimal pricing recommendations** to maximize profit.
+- Estimates **revenue and profit impact** of predicted prices.
+- Helps businesses **adapt to competitor pricing, stock levels, and demand trends**.
+- Reduces manual effort in pricing strategy through **AI-driven automation**.
+
+## 🛠️ Tech Stack
+- **Python**, **Pandas**, **NumPy**
+- **LightGBM**, **XGBoost**
+- **FastAPI** (API service)
+- **Streamlit** (Dashboard UI)
+- **Joblib** (Model serialization)
+
+## 🎯 Example Prediction
+```json
+{
+  "lightgbm_price": 58.39,
+  "xgboost_price": 67.35,
+  "estimate_revenue": 7007.50,
+  "estimated_profit": 4607.50
+}
+```
+
 
 ## Features
 

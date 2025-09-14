@@ -1,0 +1,21 @@
+artifact_path: file:///C:/Users/KIIT/Desktop/dynamic_pricing_/mlruns/662362975368285926/models/m-cc05558f96b744ca96444337d0834237/artifacts
+flavors:
+  lightgbm:
+    code: null
+    data: model.pkl
+    lgb_version: 4.6.0
+    model_class: lightgbm.sklearn.LGBMRegressor
+  python_function:
+    data: model.pkl
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.lightgbm
+    python_version: 3.11.0
+mlflow_version: 3.3.2
+model_id: m-cc05558f96b744ca96444337d0834237
+model_size_bytes: 439872
+model_uuid: m-cc05558f96b744ca96444337d0834237
+prompts: null
+run_id: 2d66f9ce86234a6799ce49bd5576b370
+utc_time_created: '2025-09-13 14:00:59.560596'

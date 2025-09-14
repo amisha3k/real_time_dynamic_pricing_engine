@@ -1,9 +1,12 @@
 import pandas as pd
 import numpy as np
 import joblib
+import xgboost as xgb
 
 lgb_model = joblib.load("models/lgb_model.pkl")
-xgb_model = joblib.load("models/xgb_model.pkl")
+xgb_model = xgb.Booster()
+xgb_model.load_model("models/xgb_model.json")  
+# xgb_model = joblib.load("models/xgb_model.pkl")
 
 
 def evaluate_business_metrics(y_true, y_pred, cost=20):
@@ -29,8 +32,10 @@ def predict_price(input_data: dict):
     features = ['units_sold', 'competitor_price', 'stock_level', 'day_of_week', 'holiday_flag',
                 'views', 'moving_avg_demand', 'price_elasticity', 'trend_factor']
     
+  
     price_lgb = lgb_model.predict(df[features])[0]
-    price_xgb = xgb_model.predict(df[features])[0]
+    # price_xgb = xgb_model.predict(df[features])[0]
+    price_xgb = xgb_model.predict(xgb.DMatrix(df[features]))[0]
 
     revenue, profit=evaluate_business_metrics(
         y_true=np.array([df['units_sold'][0]]),
